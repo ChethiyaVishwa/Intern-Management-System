@@ -1,0 +1,83 @@
+.fields-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.form h2 {
+    margin-bottom: 15px;
+    color: #ffffff; /* Darker text color */
+    font-size: 24px;
+}
+
+/* Form description text */
+.form p {
+    color: #ffffff; /* Gray text */
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Error text styling */
+.error-text {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: none; /* Hidden by default */
+}
+
+
+.otp_field{
+    border-radius: 5px;
+    font-size: 60px;
+    height: 100px;
+    width: 100px;
+    border: 3px solid #cacaca;
+    margin: 1%;
+    text-align: center;
+    font-weight: 600;
+    outline: none;
+}
+.otp_field::-webkit-inner-spin-button,
+.otp_field::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;      
+}
+.otp_field:valid{
+    border-color: #3095d8;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+}
+
+.button {
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding for a comfortable size */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+/* Hover effect */
+.button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+/* Active effect */
+.button:active {
+    background-color: #3e8e41; /* Even darker green when pressed */
+    transform: translateY(0); /* Reset lift effect */
+}
+
+
+@media only screen and (max-width: 455px){
+    .otp_field{        
+        font-size: 55px;
+        height: 80px;
+        width: 80px;
+    }
+}

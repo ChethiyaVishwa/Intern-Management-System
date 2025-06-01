@@ -1,0 +1,110 @@
+/* General Body Styles */
+body {
+    background-color:#f8eeee;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+/* Feedback Container */
+.feedback-container {
+    background-color: #0a199e;
+    color: white;
+    padding: 30px;
+    width: 40%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+/* Header Styles */
+h3 {
+    font-size: 14px;
+    color: #aaa;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+/* Progress Bar */
+.progress-bar {
+    width: 100%;
+    height: 5px;
+    background-color: #1daa5c;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Label Styling */
+label {
+    display: block;
+    font-size: 16px;
+    margin: 15px 0 5px;
+}
+
+/* Rating Stars */
+.rating {
+    display: flex;
+    justify-content: center;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 24px;
+    cursor: pointer;
+    color: #f8eeee;
+    transition: 0.3s;
+}
+
+.rating input:checked ~ label {
+    color: hsl(61, 95%, 45%);
+}
+
+/* Options */
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.options input {
+    display: none;
+}
+
+.options label {
+    background-color: #8cc4f1;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.options input:checked + label {
+    background-color: #0ab84c;
+}
+
+/* Submit Button */
+button {
+    background-color: #1daa5c;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #00d146;
+}

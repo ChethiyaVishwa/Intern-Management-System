@@ -1,0 +1,129 @@
+/* General reset for consistent styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body styling */
+body {
+  background-image: url('https://cdn.pixabay.com/photo/2020/10/21/01/56/digital-5671888_1280.png');
+  background-size: cover; /* Adjust the size of the background image */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+
+/* Container styling */
+.container {
+  background-image: url('https://cdn.pixabay.com/photo/2020/10/21/01/56/digital-5671888_1280.png');
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(255, 255, 255);
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Header styling */
+.container h2 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label styling */
+form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+/* Input and select styling */
+form input[type="text"],
+form select,
+form input[type="file"] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  width: 100%;
+}
+
+form select {
+  background: #f0eded7e;
+  appearance: none;
+  cursor: pointer;
+}
+
+form input[type="file"] {
+  padding: 5px;
+}
+
+/* Checkbox group styling */
+.checkbox-group {
+  margin-bottom: 15px;
+}
+
+.checkbox-group input {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.checkbox-group label {
+  margin-right: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Button styling */
+form button[type="submit"] {
+  background-color: #0056a6;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #003d7a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      padding: 15px;
+  }
+
+  .container h2 {
+      font-size: 20px;
+  }
+
+  form input[type="text"],
+  form select,
+  form input[type="file"] {
+      font-size: 12px;
+  }
+
+  form button[type="submit"] {
+      font-size: 14px;
+  }
+}

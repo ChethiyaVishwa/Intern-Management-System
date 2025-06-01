@@ -1,0 +1,122 @@
+/* Import Google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+/* Universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Body styles */
+body {
+  position: relative;
+  background: linear-gradient(to bottom, #50B748, #00B4EB, #0056A2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Selection style */
+::selection {
+  color: #ececec;
+  background: #00B4EB;
+}
+
+/* Container styles */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Form box styles */
+.form-box {
+  background: #86d1fd;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: -3px 3px 10px -5px rgba(0, 0, 0, 0.2);
+  padding: 30px 30px;
+  text-align: center;
+}
+
+/* Header styles */
+.form-box header {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Input field styles */
+.field {
+  margin-bottom: 20px;
+}
+
+.field input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.field input:focus {
+  border: 2px solid #0056A2;
+}
+
+/* Button styles */
+.field .btn {
+  background-color: #0056A2;
+  color: white;
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.field .btn:hover {
+  background-color: #003f7d;
+}
+
+/* Links section */
+.links {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.links a {
+  color: #0056A2;
+  font-weight: 600;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* Error message styling */
+.message {
+  margin-top: 20px;
+  background-color: #ffcccc;
+  color: #851923;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.message p {
+  margin: 0;
+}
